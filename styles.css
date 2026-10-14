@@ -700,7 +700,7 @@ h1 {
     order: -1;
   }
   .floating-card {
-    left: -10px;
+    display: none;
   }
   .about,
   .projects,
