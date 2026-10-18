@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <script>
     try {
       const saved = localStorage.getItem('theme');
@@ -50,10 +50,12 @@
   </div>
 
   <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
   <header class="nav">
     <div class="nav-inner">
-      <a href="#top" class="logo" aria-label="Jad Obeid – home"><span class="logo-mark">JO</span><span class="logo-text">Jad Obeid</span></a>
+      <a href="#top" class="logo" aria-label="Jad Obeid – home"><span class="logo-mark"><img src="assets/jad-mini.jpg" alt="" width="34" height="34" /></span><span class="logo-text">Jad Obeid</span></a>
       <nav id="menu" class="menu" aria-label="Main">
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
@@ -77,10 +79,10 @@
     <section class="hero wrap" id="top">
       <div class="hero-copy">
         <a href="#contact" class="status reveal"><span class="pulse"></span> Available now · full-stack &amp; AI roles</a>
-        <h1 class="reveal">
-          I build web apps<br />
-          <span class="serif">end&nbsp;to&nbsp;end</span> — and<br />
-          make them <span class="grad">smart.</span>
+        <h1 class="hero-title">
+          <span class="line"><span>I build web apps</span></span>
+          <span class="line"><span><span class="serif">end&nbsp;to&nbsp;end</span> — and</span></span>
+          <span class="line"><span>make them <span class="grad">smart.</span></span></span>
         </h1>
         <p class="lead reveal">
           I'm <strong>Jad Obeid</strong>, a full-stack developer and MSc Computer Science student in Tripoli, Lebanon.
@@ -88,7 +90,7 @@
           from database design and REST APIs to polished interfaces.
         </p>
         <div class="cta reveal">
-          <a href="#work" class="btn primary lg">See my work <span class="arr">→</span></a>
+          <a href="#work" class="btn primary lg magnetic">See my work <span class="arr">→</span></a>
           <a href="assets/Jad_Obeid_CV.pdf" class="btn lg" download>
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
             Download CV
@@ -145,7 +147,7 @@
       </div>
 
       <!-- Featured case study -->
-      <article class="case card reveal" data-cat="fullstack">
+      <article class="case card reveal tilt-soft" data-cat="fullstack">
         <a class="shot" href="https://guidely-six.vercel.app" target="_blank" rel="noopener" aria-label="Open Guidely live demo">
           <div class="browser">
             <div class="browser-bar"><i></i><i></i><i></i><span>guidely-six.vercel.app</span></div>
@@ -176,22 +178,22 @@
       </div>
 
       <div class="projects">
-        <article class="project card reveal" data-cat="ai fullstack">
-          <a class="shot" href="https://github.com/jad-obeidd/smartcart" target="_blank" rel="noopener" aria-label="Open SmartCart on GitHub">
+        <article class="project card reveal tilt" data-cat="ai fullstack">
+          <a class="shot" href="smartcart/" target="_blank" rel="noopener" aria-label="Open the SmartCart live demo">
             <div class="browser">
               <div class="browser-bar"><i></i><i></i><i></i><span>smartcart · taco night for 4</span></div>
               <img src="assets/projects/smartcart.webp" alt="SmartCart shopping list generated from 'taco night for 4' with live price changes" loading="lazy" width="1600" height="1000" />
             </div>
           </a>
           <div class="project-body">
-            <div class="project-top"><span class="badge ai">AI · Full-stack</span><a href="https://github.com/jad-obeidd/smartcart" target="_blank" rel="noopener" class="ext">Code ↗</a></div>
+            <div class="project-top"><span class="badge ai">AI · Full-stack</span><span class="links"><a href="smartcart/" target="_blank" rel="noopener" class="ext live"><i></i>Live demo ↗</a><a href="https://github.com/jad-obeidd/smartcart" target="_blank" rel="noopener" class="ext">Code ↗</a></span></div>
             <h3>SmartCart</h3>
             <p>An AI shopping assistant: type "taco night for 4" and get a priced list. It understands "healthy snacks under $5", recommends products and streams live price changes.</p>
             <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>OpenAI API</span><span>JWT</span><span>SSE</span></div>
           </div>
         </article>
 
-        <article class="project card reveal" data-cat="ai">
+        <article class="project card reveal tilt" data-cat="ai">
           <a class="shot" href="https://github.com/jad-obeidd/sentiment-analyzer" target="_blank" rel="noopener" aria-label="Open Sentiment Analyzer on GitHub">
             <div class="browser">
               <div class="browser-bar"><i></i><i></i><i></i><span>sentiment-analyzer</span></div>
@@ -206,7 +208,7 @@
           </div>
         </article>
 
-        <article class="project card reveal" data-cat="ai">
+        <article class="project card reveal tilt" data-cat="ai">
           <a class="shot" href="https://try.ka.nz/ai/jadobeid" target="_blank" rel="noopener" aria-label="Open SkillForge AI showcase">
             <div class="browser">
               <div class="browser-bar"><i></i><i></i><i></i><span>skillforge · study smarter</span></div>
@@ -221,7 +223,7 @@
           </div>
         </article>
 
-        <article class="project card reveal" data-cat="fullstack">
+        <article class="project card reveal tilt" data-cat="fullstack">
           <a class="shot" href="https://github.com/jad-obeidd/VoteVision" target="_blank" rel="noopener" aria-label="Open VoteVision on GitHub">
             <div class="browser">
               <div class="browser-bar"><i></i><i></i><i></i><span>votevision · live results</span></div>
@@ -381,7 +383,7 @@
           <button class="btn sm" id="copy" type="button" aria-label="Copy email address">Copy</button>
         </div>
         <div class="cta center">
-          <a href="mailto:jad.4obeid@gmail.com" class="btn primary lg">Email me <span class="arr">→</span></a>
+          <a href="mailto:jad.4obeid@gmail.com" class="btn primary lg magnetic">Email me <span class="arr">→</span></a>
           <a href="https://www.linkedin.com/in/jad-obeid-dev" class="btn lg" target="_blank" rel="noopener">LinkedIn</a>
           <a href="assets/Jad_Obeid_CV.pdf" class="btn lg" download>Download CV</a>
         </div>
@@ -395,6 +397,6 @@
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

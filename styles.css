@@ -164,11 +164,20 @@ img { max-width: 100%; display: block; }
 }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.02em; }
 .logo-mark {
+  position: relative;
   display: grid; place-items: center;
-  width: 34px; height: 34px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff; font-size: 0.82rem; font-weight: 800;
+  width: 36px; height: 36px; border-radius: 50%;
+  padding: 2px;
+  background: conic-gradient(from var(--ang, 0deg), var(--accent), var(--accent-3), var(--accent-2), var(--accent));
+  animation: spin 6s linear infinite;
 }
+.logo-mark img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--bg-2); }
+.logo-mark::after {
+  content: ''; position: absolute; right: -1px; bottom: -1px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--green); border: 2px solid var(--bg-2);
+}
+.logo:hover .logo-mark img { transform: scale(1.06); transition: transform 0.3s; }
 .menu { display: flex; gap: 4px; }
 .menu a { padding: 8px 14px; border-radius: 10px; font-size: 0.92rem; color: var(--muted); transition: color 0.2s, background 0.2s; }
 .menu a:hover, .menu a.active { color: var(--text); background: var(--surface-2); }
@@ -460,13 +469,91 @@ h1 .serif { font-size: 1.08em; }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* ============ Motion extras ============ */
+.progress {
+  position: fixed; top: 0; left: 0; height: 3px; width: 100%;
+  transform-origin: 0 50%; transform: scaleX(var(--p, 0));
+  background: linear-gradient(90deg, var(--accent), var(--accent-3), var(--accent-2));
+  z-index: 60; pointer-events: none;
+}
+.cursor-glow {
+  position: fixed; left: 0; top: 0; width: 420px; height: 420px; margin: -210px 0 0 -210px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 147, 255, 0.13), transparent 65%);
+  pointer-events: none; z-index: -1;
+  transform: translate3d(var(--cx, -999px), var(--cy, -999px), 0);
+  transition: opacity 0.4s;
+}
+[data-theme='light'] .cursor-glow { background: radial-gradient(circle, rgba(79, 70, 229, 0.08), transparent 65%); }
+@media (hover: none) { .cursor-glow { display: none; } }
+
+/* hero headline: each line slides up from a mask */
+.hero-title .line { display: block; overflow: hidden; padding-bottom: 0.06em; margin-bottom: -0.06em; }
+.hero-title .line > span { display: inline-block; transform: translateY(110%); animation: lineUp 0.9s cubic-bezier(.2,.8,.2,1) forwards; }
+.hero-title .line:nth-child(2) > span { animation-delay: 0.12s; }
+.hero-title .line:nth-child(3) > span { animation-delay: 0.24s; }
+@keyframes lineUp { to { transform: none; } }
+
+/* 3D tilt (driven by script.js) */
+.tilt, .tilt-soft { transform-style: preserve-3d; will-change: transform; }
+.tilt.visible, .tilt-soft.visible { transition: transform 0.25s ease-out, border-color 0.25s, box-shadow 0.25s, opacity 0.7s; }
+.tilt .shot, .tilt-soft .shot { transform: translateZ(24px); }
+
+/* magnetic buttons */
+.magnetic { will-change: transform; }
+
+/* featured case: slowly rotating gradient border */
+.case::after {
+  content: ''; position: absolute; inset: -1px; border-radius: inherit; padding: 1px;
+  background: conic-gradient(from var(--ang, 0deg), transparent 0deg, var(--accent) 60deg, var(--accent-2) 120deg, transparent 180deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: spin 7s linear infinite; pointer-events: none; opacity: 0.8;
+}
+
+/* live demo pill */
+.links { display: inline-flex; gap: 14px; align-items: center; }
+.ext.live { display: inline-flex; align-items: center; gap: 6px; color: var(--green); }
+.ext.live i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); animation: livePulse 1.8s infinite; }
+@keyframes livePulse { 70% { box-shadow: 0 0 0 7px rgba(34, 197, 94, 0); } 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } }
+
+/* chips pop in one after another */
+.reveal .chips span, .reveal .tags span { opacity: 0; transform: translateY(8px) scale(0.96); transition: opacity 0.4s, transform 0.4s; transition-delay: calc(var(--i, 0) * 35ms + 150ms); }
+.reveal.visible .chips span, .reveal.visible .tags span { opacity: 1; transform: none; }
+.chips span:hover, .tags span:hover { border-color: var(--accent); color: var(--text); }
+
+/* timeline cards slide in from the side */
+.job.reveal { transform: translateX(-28px); }
+.job.reveal.visible { transform: none; }
+
+/* stat cards: gradient line sweeps in */
+.stat::after {
+  content: ''; position: absolute; left: 24px; right: 24px; bottom: 0; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0); transform-origin: left; transition: transform 1.2s cubic-bezier(.2,.8,.2,1) 0.3s;
+}
+.stat.visible::after { transform: scaleX(1); }
+
+/* section titles: kicker line grows */
+.kicker::before { transition: width 0.8s cubic-bezier(.2,.8,.2,1); }
+.section-head.reveal:not(.visible) .kicker::before { width: 0; }
+
+/* code chip caret */
+.code .caret { display: inline-block; width: 7px; height: 1em; background: var(--accent); vertical-align: -2px; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* trophy wiggle */
+.ach.big.visible .trophy { animation: wiggle 1.6s ease-in-out 0.4s 1; }
+@keyframes wiggle { 20% { transform: rotate(-12deg) scale(1.1); } 40% { transform: rotate(10deg) scale(1.1); } 60% { transform: rotate(-6deg); } 80% { transform: rotate(3deg); } }
+
 /* ============ Reveal ============ */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s cubic-bezier(.2,.8,.2,1), transform 0.7s cubic-bezier(.2,.8,.2,1); }
 .reveal.visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .reveal { opacity: 1; transform: none; }
+  .reveal, .reveal .chips span, .reveal .tags span, .hero-title .line > span { opacity: 1; transform: none; }
+  .cursor-glow { display: none; }
   html { scroll-behavior: auto; }
 }
 
