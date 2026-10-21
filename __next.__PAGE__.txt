@@ -1,89 +1,33 @@
-1:"$Sreact.fragment"
-2:"/_next/static/chunks/0umf92h1sb77c.js"
-3:I[39756,["$2"],"default"]
-4:I[37457,["$2"],"default"]
-8:"/_next/static/chunks/2wt69wskrf4qh.js"
-9:"/_next/static/chunks/0t03cy_x_c4yl.js"
-a:I[47420,["$2","$8","$9"],"default"]
-b:I[52004,["$2","$8","$9"],"default"]
-c:I[71606,["$2","$8","$9"],"default"]
-d:I[42724,["$2","$8","$9"],"default"]
-e:I[92349,["$2","$8","$9"],"default"]
-39:"ViewportBoundary"
-3a:I[97367,["$2"],"$39"]
-3b:"MetadataBoundary"
-3c:I[97367,["$2"],"$3b"]
-3d:"$Sreact.suspense"
-:HL["/_next/static/chunks/0oictruaon1ee.css","style"]
-6:X
-7:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$La",null,{}],["$","div",null,{"className":"bg","aria-hidden":"true","children":[["$","div",null,{"className":"bg-grid"}],["$","div",null,{"className":"blob b1"}],["$","div",null,{"className":"blob b2"}],["$","div",null,{"className":"blob b3"}]]}],["$","a",null,{"className":"skip","href":"#main","children":"Skip to content"}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","main",null,{"id":"main","children":[["$","$Le",null,{}],["$","section",null,{"className":"marquee","aria-label":"Technologies I use","children":["$","div",null,{"className":"track","children":[[["$","span","Next.js",{"children":"Next.js"}],["$","span","React",{"children":"React"}],["$","span","TypeScript",{"children":"TypeScript"}],["$","span","Node.js",{"children":"Node.js"}],["$","span","Express",{"children":"Express"}],"$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a"],["$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b"]]}]}],"$L2c","$L2d","$L2e","$L2f","$L30","$L31","$L32"]}],"$L33"],["$L34","$L35","$L36"],"$L37"]}],"p":"$@38","v":null,"s":"$6"}}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0oictruaon1ee.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0umf92h1sb77c.js","async":true}]],["$","html",null,{"lang":"en","data-theme":"dark","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23818cf8'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='66' font-family='Arial' font-weight='800' font-size='44' fill='white' text-anchor='middle'>JO</text></svg>"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){var d=document.documentElement;try{var s=localStorage.getItem('theme');if(s)d.dataset.theme=s;else if(matchMedia('(prefers-color-scheme: light)').matches)d.dataset.theme='light';}catch(e){}if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('anim','motion');setTimeout(function(){if(!d.classList.contains('ready'))d.classList.remove('motion');},4000);}})();"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Jad Obeid\",\"jobTitle\":\"Full-Stack Developer\",\"url\":\"https://jad-obeidd.github.io/\",\"image\":\"https://jad-obeidd.github.io/assets/jad.jpg\",\"email\":\"mailto:jad.4obeid@gmail.com\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Tripoli\",\"addressCountry\":\"LB\"},\"alumniOf\":{\"@type\":\"CollegeOrUniversity\",\"name\":\"Lebanese International University\"},\"knowsAbout\":[\"React\",\"Next.js\",\"TypeScript\",\"Laravel\",\"Node.js\",\"MySQL\",\"MongoDB\",\"OpenAI API\",\"NLP\"],\"sameAs\":[\"https://github.com/jad-obeidd\",\"https://www.linkedin.com/in/jad-obeid-dev\"]}"}}]]}],["$","body",null,{"className":"u8MhCG_variable Yd1Xqa_variable","children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]]}]]}],"p":"$@5","v":null,"s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[null,["$","$L3a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#07090f"}]]}],["$","$L3c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$3d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Jad Obeid · Full-Stack Developer"}],["$","meta","1",{"name":"description","content":"Jad Obeid – Full-stack developer in Tripoli, Lebanon. Next.js, React, Laravel, Node.js and AI-powered web applications. Available for full-stack and AI developer roles."}],["$","link","2",{"rel":"canonical","href":"https://jad-obeidd.github.io/"}],"$L3e","$L3f","$L40","$L41","$L42","$L43","$L44","$L45","$L46"]}]}],null]}],"$L47"]}],"p":"$@48","v":null,"s":"$6"}},"a":"$@49","u":"$@4a","b":"X4d-6VV5BAvJqe0j8DYU0"}
-4b:I[77807,["$2","$8","$9"],"default"]
-4c:I[44413,["$2","$8","$9"],"default"]
-4d:I[8128,["$2","$8","$9"],"default"]
-4e:I[78369,["$2","$8","$9"],"default"]
-4f:I[79356,["$2","$8","$9"],"default"]
-50:I[2497,["$2","$8","$9"],"default"]
-51:I[63971,["$2","$8","$9"],"default"]
-52:I[56691,["$2","$8","$9"],"default"]
-53:I[97367,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/19rhlcx2srev9.css","style"]
-f:["$","span","Laravel",{"children":"Laravel"}]
-10:["$","span","PHP",{"children":"PHP"}]
-11:["$","span","Python",{"children":"Python"}]
-12:["$","span","Flask",{"children":"Flask"}]
-13:["$","span","MySQL",{"children":"MySQL"}]
-14:["$","span","MongoDB",{"children":"MongoDB"}]
-15:["$","span","PostgreSQL",{"children":"PostgreSQL"}]
-16:["$","span","Tailwind CSS",{"children":"Tailwind CSS"}]
-17:["$","span","OpenAI API",{"children":"OpenAI API"}]
-18:["$","span","Hugging Face",{"children":"Hugging Face"}]
-19:["$","span","Docker",{"children":"Docker"}]
-1a:["$","span","Git",{"children":"Git"}]
-1b:["$","span","dup-Next.js",{"aria-hidden":"true","children":"Next.js"}]
-1c:["$","span","dup-React",{"aria-hidden":"true","children":"React"}]
-1d:["$","span","dup-TypeScript",{"aria-hidden":"true","children":"TypeScript"}]
-1e:["$","span","dup-Node.js",{"aria-hidden":"true","children":"Node.js"}]
-1f:["$","span","dup-Express",{"aria-hidden":"true","children":"Express"}]
-20:["$","span","dup-Laravel",{"aria-hidden":"true","children":"Laravel"}]
-21:["$","span","dup-PHP",{"aria-hidden":"true","children":"PHP"}]
-22:["$","span","dup-Python",{"aria-hidden":"true","children":"Python"}]
-23:["$","span","dup-Flask",{"aria-hidden":"true","children":"Flask"}]
-24:["$","span","dup-MySQL",{"aria-hidden":"true","children":"MySQL"}]
-25:["$","span","dup-MongoDB",{"aria-hidden":"true","children":"MongoDB"}]
-26:["$","span","dup-PostgreSQL",{"aria-hidden":"true","children":"PostgreSQL"}]
-27:["$","span","dup-Tailwind CSS",{"aria-hidden":"true","children":"Tailwind CSS"}]
-28:["$","span","dup-OpenAI API",{"aria-hidden":"true","children":"OpenAI API"}]
-29:["$","span","dup-Hugging Face",{"aria-hidden":"true","children":"Hugging Face"}]
-2a:["$","span","dup-Docker",{"aria-hidden":"true","children":"Docker"}]
-2b:["$","span","dup-Git",{"aria-hidden":"true","children":"Git"}]
-2c:["$","$L4b",null,{}]
-2d:["$","$L4c",null,{}]
-2e:["$","$L4d",null,{}]
-2f:["$","$L4e",null,{}]
-30:["$","$L4f",null,{}]
-31:["$","$L50",null,{}]
-32:["$","$L51",null,{}]
-33:["$","$L52",null,{}]
-34:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/19rhlcx2srev9.css","precedence":"next"}]
-35:["$","script","script-0",{"src":"/_next/static/chunks/2wt69wskrf4qh.js","async":true}]
-36:["$","script","script-1",{"src":"/_next/static/chunks/0t03cy_x_c4yl.js","async":true}]
-37:["$","$L53",null,{"children":["$","$3d",null,{"name":"Next.MetadataOutlet","children":"$@54"}]}]
-3e:["$","meta","3",{"property":"og:title","content":"Jad Obeid · Full-Stack Developer"}]
-3f:["$","meta","4",{"property":"og:description","content":"I build web apps end to end — Next.js, React, Laravel, Node.js — and add AI where it actually helps."}]
-40:["$","meta","5",{"property":"og:url","content":"https://jad-obeidd.github.io/"}]
-41:["$","meta","6",{"property":"og:image","content":"https://jad-obeidd.github.io/assets/og.png"}]
-42:["$","meta","7",{"property":"og:type","content":"website"}]
-43:["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}]
-44:["$","meta","9",{"name":"twitter:title","content":"Jad Obeid · Full-Stack Developer"}]
-45:["$","meta","10",{"name":"twitter:description","content":"I build web apps end to end — Next.js, React, Laravel, Node.js — and add AI where it actually helps."}]
-46:["$","meta","11",{"name":"twitter:image","content":"https://jad-obeidd.github.io/assets/og.png"}]
-47:["$","meta",null,{"name":"next-size-adjust","content":""}]
-6:300
-54:null
-4a:true
-6:C
-49:0
-5:"$undefined"
-48:"$undefined"
-38:"$undefined"
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/1m7boc07rb7u6.js"
+4:"/_next/static/chunks/14oul2lf0fp9c.js"
+5:"/_next/static/chunks/0et11pv3zvp5p.js"
+6:"/_next/static/chunks/2kkj1e58r_7vw.js"
+7:"/_next/static/chunks/02qw4px63y5im.js"
+8:I[52004,["$3","$4","$5","$6","$7"],"default"]
+9:I[42724,["$3","$4","$5","$6","$7"],"default"]
+a:I[92349,["$3","$4","$5","$6","$7"],"default"]
+b:I[77807,["$3","$4","$5","$6","$7"],"default"]
+c:I[44413,["$3","$4","$5","$6","$7"],"default"]
+d:I[8128,["$3","$4","$5","$6","$7"],"default"]
+e:I[78369,["$3","$4","$5","$6","$7"],"default"]
+f:I[79356,["$3","$4","$5","$6","$7"],"default"]
+10:I[2497,["$3","$4","$5","$6","$7"],"default"]
+11:I[63971,["$3","$4","$5","$6","$7"],"default"]
+12:I[56691,["$3","$4","$5","$6","$7"],"default"]
+13:I[97367,["$3","$4"],"OutletBoundary"]
+14:"$Sreact.suspense"
+18:"ViewportBoundary"
+19:I[97367,["$3","$4"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$3","$4"],"$1a"]
+17:X
+1:[["children",{"s":"__PAGE__","h":128,"d":{"r":["$","$2","c",{"children":[[["$","$L8",null,{}],["$","$L9",null,{}],["$","main",null,{"id":"main","children":[["$","$La",null,{}],["$","section",null,{"className":"marquee","aria-label":"Technologies I use","children":["$","div",null,{"className":"track","children":[[["$","span","Next.js",{"children":"Next.js"}],["$","span","React",{"children":"React"}],["$","span","TypeScript",{"children":"TypeScript"}],["$","span","Node.js",{"children":"Node.js"}],["$","span","Express",{"children":"Express"}],["$","span","Laravel",{"children":"Laravel"}],["$","span","PHP",{"children":"PHP"}],["$","span","Python",{"children":"Python"}],["$","span","Flask",{"children":"Flask"}],["$","span","MySQL",{"children":"MySQL"}],["$","span","MongoDB",{"children":"MongoDB"}],["$","span","PostgreSQL",{"children":"PostgreSQL"}],["$","span","Tailwind CSS",{"children":"Tailwind CSS"}],["$","span","OpenAI API",{"children":"OpenAI API"}],["$","span","Hugging Face",{"children":"Hugging Face"}],["$","span","Docker",{"children":"Docker"}],["$","span","Git",{"children":"Git"}]],[["$","span","dup-Next.js",{"aria-hidden":"true","children":"Next.js"}],["$","span","dup-React",{"aria-hidden":"true","children":"React"}],["$","span","dup-TypeScript",{"aria-hidden":"true","children":"TypeScript"}],["$","span","dup-Node.js",{"aria-hidden":"true","children":"Node.js"}],["$","span","dup-Express",{"aria-hidden":"true","children":"Express"}],["$","span","dup-Laravel",{"aria-hidden":"true","children":"Laravel"}],["$","span","dup-PHP",{"aria-hidden":"true","children":"PHP"}],["$","span","dup-Python",{"aria-hidden":"true","children":"Python"}],["$","span","dup-Flask",{"aria-hidden":"true","children":"Flask"}],["$","span","dup-MySQL",{"aria-hidden":"true","children":"MySQL"}],["$","span","dup-MongoDB",{"aria-hidden":"true","children":"MongoDB"}],["$","span","dup-PostgreSQL",{"aria-hidden":"true","children":"PostgreSQL"}],["$","span","dup-Tailwind CSS",{"aria-hidden":"true","children":"Tailwind CSS"}],["$","span","dup-OpenAI API",{"aria-hidden":"true","children":"OpenAI API"}],["$","span","dup-Hugging Face",{"aria-hidden":"true","children":"Hugging Face"}],["$","span","dup-Docker",{"aria-hidden":"true","children":"Docker"}],["$","span","dup-Git",{"aria-hidden":"true","children":"Git"}]]]}]}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","$Le",null,{}],["$","$Lf",null,{}],["$","$L10",null,{}],["$","$L11",null,{}]]}],["$","$L12",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/0et11pv3zvp5p.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/2kkj1e58r_7vw.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/02qw4px63y5im.js","async":true}]],["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":"$@16","v":null,"s":"$17"}}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#07090f"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Jad Obeid · Full-Stack Developer"}],["$","meta","1",{"name":"description","content":"Jad Obeid – Full-stack developer in Tripoli, Lebanon. Next.js, React, Laravel, Node.js and AI-powered web applications. Available for full-stack and AI developer roles."}],["$","link","2",{"rel":"canonical","href":"https://jad-obeidd.github.io/"}],["$","meta","3",{"property":"og:title","content":"Jad Obeid · Full-Stack Developer"}],["$","meta","4",{"property":"og:description","content":"I build web apps end to end — Next.js, React, Laravel, Node.js — and add AI where it actually helps."}],["$","meta","5",{"property":"og:url","content":"https://jad-obeidd.github.io/"}],["$","meta","6",{"property":"og:image","content":"https://jad-obeidd.github.io/assets/og.png"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"Jad Obeid · Full-Stack Developer"}],["$","meta","10",{"name":"twitter:description","content":"I build web apps end to end — Next.js, React, Laravel, Node.js — and add AI where it actually helps."}],["$","meta","11",{"name":"twitter:image","content":"https://jad-obeidd.github.io/assets/og.png"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1c","v":null,"s":"$17"}},"a":"$@1d","u":"$@1e","b":"OFe4t2dvQ_Wcwqu4dUcQK"}
+15:null
+1e:true
+17:300
+17:C
+1d:0
+1c:"$undefined"
+16:"$undefined"
